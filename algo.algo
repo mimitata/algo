@@ -1,0 +1,17 @@
+ALGORITHM 
+VAR
+    str: STRING
+    w:INTEGER:=1
+    v,c:INTEGER:=0
+BEGIN
+    read(str)
+    FOR i FROM 0 TO str.length STEP 1  DO
+        IF (str[i]==" ") THEN w=w+1
+            set_instructions
+        END_IF
+        IF (str[i]=="o"||"a"||"e"||"u"||"i"||"y") THEN v=v+1
+            set_instructions
+        END_IF
+        c=i
+    END_FOR
+END
